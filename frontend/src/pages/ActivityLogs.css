@@ -1,0 +1,153 @@
+.activity-logs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dashboard-info h2 {
+  margin: 0 0 15px 0;
+  font-size: 28px;
+}
+
+.user-details {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.user-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.logs-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logs-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.logs-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.logs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.log-item {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+
+.log-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.log-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.log-content {
+  flex: 1;
+}
+
+.log-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.log-user {
+  font-weight: bold;
+  color: #333;
+}
+
+.log-entity {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.log-time {
+  color: #666;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.log-action {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+.log-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.loading, .no-logs {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px) {
+  .user-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .log-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .log-time {
+    margin-left: 0;
+  }
+}
+
+
+

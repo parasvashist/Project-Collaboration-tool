@@ -1,0 +1,184 @@
+.teams-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.teams-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.teams-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.teams-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.error-message {
+  background-color: #fee;
+  color: #c33;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #fcc;
+}
+
+.success-message {
+  background-color: #efe;
+  color: #363;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #cfc;
+}
+
+.teams-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.create-team-section,
+.join-team-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.create-team-section h2,
+.join-team-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.create-team-form,
+.join-team-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.create-team-form input,
+.join-team-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.create-team-form button,
+.join-team-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.create-team-form button:hover,
+.join-team-form button:hover {
+  background-color: #0056b3;
+}
+
+.create-team-form button:disabled,
+.join-team-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.my-teams-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.no-teams {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team-card h3 {
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.team-card p {
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.team-members {
+  margin-top: 15px;
+}
+
+.team-members h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.team-members ul {
+  list-style: none;
+  padding: 0;
+}
+
+.team-members li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  color: #555;
+}
+
+.team-members li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .teams-container {
+    padding: 10px;
+  }
+  
+  .create-team-form,
+  .join-team-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+}
